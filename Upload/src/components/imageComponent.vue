@@ -10,12 +10,12 @@
 <script>
 export default {
     methods: {
-        imageSuccess: function (file, list) {
-            console.log('upload success:', file, list);
+        imageSuccess: function (response,file, list) {
+            console.log('upload image success:', response,file, list);
         },
         imagebefore: function (file) {
             let that = this;
-            let isPicture = new Promise((resolve, reject) => {
+            const isPicture = new Promise((resolve, reject) => {
                 async function valid() {
                     let binary = await that.fileTobinary(file).then().catch(e => {});
                     let picture = await that.binaryToImage(binary,file.name).then().catch(e =>{});
