@@ -10,6 +10,8 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "element-ui": "^2.13.2",
+    "jszip": "^3.4.0",
+    "mp4box": "^0.3.20",
     "vue": "^2.6.11",
     "xlsx": "^0.16.1"
   },
