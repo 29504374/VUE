@@ -13,7 +13,9 @@
     <el-tab-pane label="mp4上传" name="four">
       <mp4Upload />
     </el-tab-pane>
-    <el-tab-pane label="大文件上传" name="five">更新中...</el-tab-pane>
+    <el-tab-pane label="大文件上传" name="five">
+      <bigUpload />
+    </el-tab-pane>
   </el-tabs>
   </div>
 </template>
@@ -23,6 +25,7 @@ import imageUpload from './components/imageComponent'
 import excelUpload from './components/excelComponent'
 import zipUpload from './components/zipComponent'
 import mp4Upload from './components/mp4Component'
+import bigUpload from './components/bigComponent'
 
 export default {
   name: 'App',
@@ -30,7 +33,8 @@ export default {
     imageUpload,
     excelUpload,
     zipUpload,
-    mp4Upload
+    mp4Upload,
+    bigUpload
   },
   data()
   {
